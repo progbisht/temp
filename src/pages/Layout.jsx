@@ -4,6 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import WhatsAppButton from "../components/WhatsApp/WhatsAppButton";
 // import OrderPopup from "../components/OrderPopup/OrderPopup";
+import { DataProvider } from "../context/DataProvider";
 
 const Layout = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
@@ -14,8 +15,10 @@ const Layout = () => {
   return (
     <>
       <Navbar handleOrderPopup={handleOrderPopup} />
-      <Outlet />
-      <WhatsAppButton/>
+      <DataProvider>
+        <Outlet />
+      </DataProvider>
+      <WhatsAppButton />
       <Footer />
       {/* <OrderPopup orderPopup={orderPopup} setOrderPopup={setOrderPopup} /> */}
     </>

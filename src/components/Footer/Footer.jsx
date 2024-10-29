@@ -1,4 +1,3 @@
-
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import FooterBg from "../../assets/website/nanital.jpeg";
 
@@ -43,13 +42,11 @@ const Footer = () => {
             >
               Esteem Travels
             </a>
-            <p className="  pt-4">
-              Path to heaven - Devbhoomi Darshan
-            </p>
+            <p className="  pt-4">Path to heaven - Devbhoomi Darshan</p>
             <a
-              href="https://www.youtube.com/channel/UC1H-a1MKEFXRiFlGNLcy7gQ"
+              href="#"
               target="_blank"
-              className="inline-block bg-[#3d2517] py-2 px-4 mt-5 text-sm rounded-full"
+              className="inline-block bg-primary hover:bg-primary/90 py-2 px-4 mt-5 text-sm rounded-full"
             >
               Book a call
             </a>

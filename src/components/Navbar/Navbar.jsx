@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState } from "react";
 import Logo from "../../assets/website/logo.png";
+import BookingForm from "../Booking/BookingForm";
 
 const Menu = [
   {
@@ -29,19 +30,27 @@ const Menu = [
   },
 ];
 
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsFormOpen(true);
+  };
+
+  const handleCloseClick = () => {
+    setIsFormOpen(false);
+  };
 
   return (
     <>
       {/* <div className="bg-gradient-to-r from-secondary to-secondary/90 shadow-md bg-gray-900 text-white"> */}
-      
+
       <div className="bg-white text-gray-950 shadow-md border-b border-gray-200">
         <div className="container py-4 mx-auto px-4 sm:px-4 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo section */}
-            
+
             <div>
               <a
                 href="#"
@@ -93,20 +102,27 @@ function Navbar() {
                   <li key={menu.id}>
                     <a
                       href={menu.link}
-                      className="inline-block text-lg sm:text-xl py-2 px-3 text-gray-950 hover:text-primary transition-colors duration-200"
+                      // className="inline-block text-lg sm:text-xl py-2 px-3 text-gray-950 hover:text-primary transition-colors duration-200"
+                      className="rounded-md px-3 py-2 text-sm sm:text-base font-medium text-gray-950 hover:text-primary transition-colors duration-200"
                     >
                       {menu.name}
                     </a>
                   </li>
                 ))}
               </ul>
-              <button className="bg-primary hover:bg-primary/90 transition-transform duration-200 transform hover:scale-105 text-white px-5 py-3 rounded-full flex items-center gap-3 shadow-lg">
+              <button
+                className="bg-primary hover:bg-primary/90 transition-transform duration-200 transform hover:scale-105 text-white px-5 py-3 rounded-full flex items-center gap-3 shadow-lg"
+                onClick={handleButtonClick}
+              >
                 Book Now
-                {/* <FaCoffee className="text-xl text-white drop-shadow-sm cursor-pointer" /> */}
               </button>
             </div>
           </div>
 
+          <BookingForm
+            isFormOpen={isFormOpen}
+            handleCloseClick={handleCloseClick}
+          />
           {/* Mobile menu (visible when isOpen is true) */}
           {isOpen && (
             <div className="sm:hidden mt-4 p-4 border-2 border-primary/80 rounded-md transition-all duration-300 ease-in-out shadow-md">
@@ -115,28 +131,26 @@ function Navbar() {
                   <li key={menu.id}>
                     <a
                       href={menu.link}
-                      className="block text-lg py-2 text-center text-black/90 hover:text-white hover:bg-gray-300 px-4 rounded-md transition-colors duration-200"
+                      // className="block text-lg py-2 text-center text-black/90 hover:text-white hover:bg-gray-300 px-4 rounded-md transition-colors duration-200"
+                      className="block rounded-md px-3 py-2 text-sm text-center font-medium text-gray-950 hover:text-primary transition-colors duration-200"
                     >
                       {menu.name}
                     </a>
                   </li>
                 ))}
               </ul>
-              <button className="mt-4 w-full bg-primary hover:bg-primary/90 text-white px-5 py-3 rounded-full flex items-center justify-center gap-3 shadow-lg transition-transform duration-200 transform hover:scale-105">
+              <button
+                className="mt-4 w-full bg-primary hover:bg-primary/90 text-white px-5 py-3 rounded-full flex items-center justify-center gap-3 shadow-lg transition-transform duration-200 transform hover:scale-105"
+                onClick={handleButtonClick}
+              >
                 Book Now
-                {/* <FaCoffee className="text-xl text-white" /> */}
               </button>
             </div>
           )}
         </div>
       </div>
-
     </>
   );
 }
 
 export default Navbar;
-
-
-
-

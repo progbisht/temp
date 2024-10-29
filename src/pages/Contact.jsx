@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,16 +23,17 @@ const Contact = () => {
 
   return (
     <div className="container py-8">
-      
       {/* Contact Information Section */}
       <div className="py-4">
-        <h1 className="my-8 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-bold">
+        <h1 className="my-8 border-l-8 border-primary/50 py-2 pl-4 text-3xl font-bold">
           Contact Us
         </h1>
         <div className="mb-8 text-center">
           <p className="text-lg text-gray-700">Email: contact@example.com</p>
           <p className="text-lg text-gray-700">Phone: +1 (123) 456-7890</p>
-          <p className="text-lg text-gray-700">Address: 123 Main St, City, Country</p>
+          <p className="text-lg text-gray-700">
+            Address: 123 Main St, City, Country
+          </p>
         </div>
 
         {/* Google Map Iframe */}
@@ -56,7 +57,10 @@ const Contact = () => {
         </h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-700"
+            >
               Name:
             </label>
             <input
@@ -70,7 +74,10 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
               Email:
             </label>
             <input
@@ -84,7 +91,10 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="phone"
+              className="block text-sm font-medium text-gray-700"
+            >
               Phone:
             </label>
             <input
@@ -98,7 +108,10 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium text-gray-700"
+            >
               Message:
             </label>
             <textarea
@@ -113,7 +126,7 @@ const Contact = () => {
           <div>
             <button
               type="submit"
-              className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-300"
+              className="w-full bg-primary hover:bg-primary/90 transition-transform duration-200 transform hover:scale-105 text-white px-5 py-3 rounded-full shadow-lg"
             >
               Submit
             </button>

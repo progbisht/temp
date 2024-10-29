@@ -6,11 +6,11 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
-        
+        roboto: ["Roboto", "sans-serif"],
       },
       colors: {
-        primary: "#874da2",
-        secondary: "#c43a30",
+        primary: "#4facfe",
+        secondary: "#00f2fe",
         brandDark: "#270c03",
         dark: "#1e1e1e",
         light: "#f5f5f5",
@@ -19,7 +19,7 @@ export default {
         center: true,
         padding: {
           DEFAULT: "1rem",
-          sm: "3rem",
+          sm: "2rem",
         },
       },
       animation: {
@@ -29,4 +29,3 @@ export default {
   },
   plugins: [],
 };
-

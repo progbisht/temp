@@ -2,7 +2,7 @@ import React from "react";
 // import Hero from "../components/Hero/Hero";
 // import NatureVid from "../assets/video/main.mp4";
 // import BlogsComp from "../components/Blogs/BlogsComp";
-import Places from "../components/Places/Places";
+import Packages from "../components/Packages/Packages.jsx";
 // import Testimonial from "../components/Testimonial/Testimonial";
 // import Banner from "../components/Banner/Banner";
 // import BannerPic from "../components/BannerPic/BannerPic";
@@ -35,7 +35,7 @@ const Home = () => {
           </video>
           <Hero />
         </div>
-        <Places handleOrderPopup={handleOrderPopup} />
+        <Packages handleOrderPopup={handleOrderPopup} />
         <BannerPic img={BannerImg} />
         <BlogsComp />
         <Banner />
@@ -44,15 +44,13 @@ const Home = () => {
         <OrderPopup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
       </div> */}
       <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-x-hidden">
-        
         <Hero />
         <Destination />
-        <Places handleOrderPopup={handleOrderPopup} />
+        <Packages handleOrderPopup={handleOrderPopup} />
         <Banner />
         {/* <AppStore /> */}
         <Testimonials />
-        
-    </div>
+      </div>
     </>
   );
 };

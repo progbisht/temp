@@ -5,11 +5,13 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
 import NoPage from "./pages/NoPage";
-import Contact from "./pages/Contact"
-import PlacesRoute from "./pages/PlacesRoute";
+import Contact from "./pages/Contact";
+import Destinations from "./pages/Destination";
+import Packages from "./components/Packages/Packages";
 // import BlogsDetails from "./pages/BlogsDetails";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import PackageDetails from "./components/Packages/PackageDetails";
 
 const App = () => {
   React.useEffect(() => {
@@ -23,20 +25,21 @@ const App = () => {
   }, []);
 
   return (
-   
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="blogs" element={<Blogs />} />
-        <Route path="contact" element={<Contact />} />
-        {/* <Route path="blogs/:id" element={<BlogsDetails />} /> */}
-        <Route path="places" element={<PlacesRoute />} />
-        <Route path="*" element={<NoPage />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          {/* <Route path="blogs/:id" element={<BlogsDetails />} /> */}
+          <Route path="places" element={<Destinations />} />
+          <Route path="packages" element={<Packages />} />
+          <Route path="packages/:id" element={<PackageDetails />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
