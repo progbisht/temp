@@ -1,5 +1,6 @@
-import { IoLocationSharp } from "react-icons/io5";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { IoLocationSharp } from "react-icons/io5";
 
 const PackageCard = ({
   id,
@@ -9,13 +10,15 @@ const PackageCard = ({
   description,
   price,
   type,
-  handleOrderPopup,
+  handleBookingPopup,
 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <>
       <div
         className="shadow-lg transition-all duration-500 hover:shadow-2xl dark:bg-slate-950 dark:text-white cursor-pointer rounded-lg overflow-hidden"
-        onClick={handleOrderPopup}
+        onClick={handleBookingPopup}
       >
         <div className="relative overflow-hidden group">
           <img

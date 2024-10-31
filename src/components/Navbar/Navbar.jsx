@@ -20,8 +20,8 @@ const Menu = [
   },
   {
     id: 4,
-    name: "Blog",
-    link: "/blog",
+    name: "Packages",
+    link: "/packages",
   },
   {
     id: 5,

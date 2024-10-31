@@ -18,6 +18,10 @@ function PackageDetails() {
   const { img, title, sightseeing, description, type, price } = packageDetails;
   console.log(description);
 
+  const handleBookNow = () => {
+    alert(`Booking for ${packageDetails.title} confirmed!`); // Replace with actual booking logic
+  };
+
   return (
     <div className="container mx-auto p-6">
       <h1 className="my-8 border-l-8 border-primary/50 py-2 pl-4 text-3xl font-bold">
@@ -61,6 +65,13 @@ function PackageDetails() {
             ))}
           </ul>
         </div>
+        {/* Book Now Button */}
+        <button
+          onClick={handleBookNow}
+          className="mt-6 w-full py-3 text-lg font-semibold bg-primary hover:bg-primary/90 transition-transform duration-200 transform hover:scale-105 text-white "
+        >
+          Book Now
+        </button>
       </div>
     </div>
   );
