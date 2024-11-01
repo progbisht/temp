@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
+import FooterBg from "../../assets/website/footer.webp";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
-import FooterBg from "../../assets/website/nanital.jpeg";
 
 const FooterLinks = [
   {
@@ -35,21 +36,21 @@ const Footer = () => {
         <div className="container grid md:grid-cols-3 pb-20 pt-5">
           {/* company details */}
           <div className="py-8 px-4">
-            <a
-              href="#"
+            <Link
+              to="#"
               className="font-semibold tracking-widest text-2xl sm:text-3xl font-cursive
 "
             >
               Esteem Travels
-            </a>
+            </Link>
             <p className="  pt-4">Path to heaven - Devbhoomi Darshan</p>
-            <a
-              href="#"
+            <Link
+              to={`tel:+919876543210`}
               target="_blank"
               className="inline-block bg-primary hover:bg-primary/90 py-2 px-4 mt-5 text-sm rounded-full"
             >
               Book a call
-            </a>
+            </Link>
           </div>
 
           {/* Footer links */}
@@ -61,12 +62,12 @@ const Footer = () => {
               <ul className="space-y-3">
                 {FooterLinks.map((data, index) => (
                   <li key={index}>
-                    <a
-                      href={data.link}
+                    <Link
+                      to={data.link}
                       className="inline-block hover:scale-105 duration-200"
                     >
                       {data.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -79,12 +80,12 @@ const Footer = () => {
               <ul className="space-y-3">
                 {FooterLinks.map((data, index) => (
                   <li key={index}>
-                    <a
-                      href={data.link}
+                    <Link
+                      to={data.link}
                       className="inline-block hover:scale-105 duration-200 "
                     >
                       {data.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -101,15 +102,15 @@ const Footer = () => {
 
                 {/* social links */}
                 <div className="flex items-center gap-3 mt-6">
-                  <a href="#">
+                  <Link to="#">
                     <FaInstagram className="text-3xl hover:text-primary duration-300" />
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="#">
                     <FaFacebook className="text-3xl hover:text-primary duration-200" />
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="#">
                     <FaLinkedin className="text-3xl hover:text-primary duration-200" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,8 +1,7 @@
-
 import BlogCard from "./BlogCard";
-import Img1 from "../../assets/badrinath-dham.jpg";
-import Img2 from "../../assets/kedarnath-dham.jpg";
-import Img3 from "../../assets/gangotri-dham.jpg";
+import Img1 from "../../assets/badrinath-dham.webp";
+import Img2 from "../../assets/kedarnath-dham.webp";
+import Img3 from "../../assets/gangotri-dham.webp";
 
 const BlogsData = [
   {

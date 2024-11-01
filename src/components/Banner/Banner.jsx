@@ -1,9 +1,8 @@
-
-import BannerImg from "../../assets/nainital.jpg";
-import { BiLogoTailwindCss } from "react-icons/bi";
+import BannerImg from "../../assets/nainital.webp";
+import { FaMountain } from "react-icons/fa";
 import { FaClipboard } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
-import BgImg from "../../assets/clouds.jpg";
+import BgImg from "../../assets/background.webp";
 
 const bgImage = {
   backgroundImage: `url(${BgImg})`,
@@ -18,67 +17,72 @@ const Banner = () => {
   return (
     <>
       <span id="about"></span>
-      <div style={bgImage}>
-        <div className="min-h-[550px] flex justify-center items-center py-12 sm:py-0 ">
-          <div className="container">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div style={bgImage} className="relative bg-cover bg-center text-white">
+        <div className="min-h-[550px] flex justify-center items-center py-12 sm:py-0 bg-gradient-to-r from-black/50 to-transparent">
+          <div className="container mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
               {/* Image section */}
-              <div data-aos="zoom-in">
+              <div data-aos="zoom-in" className="flex justify-center">
                 <img
                   src={BannerImg}
-                  alt="biryani img"
-                  className="rounded-full object-cover w-80 h-80 mx-auto drop-shadow-[10px_-10px_12px_rgba(0,0,0,1)] flip"
+                  alt="travel destination"
+                  className="rounded-full object-cover w-80 h-80 shadow-xl border-4 border-white"
                 />
               </div>
-              {/* text content section */}
-              <div className="flex flex-col justify-center gap-6 sm:pt-0">
+
+              {/* Text content section */}
+              <div className="flex flex-col justify-center gap-6 text-left">
                 <h1
                   data-aos="fade-up"
-                  className="text-3xl sm:text-4xl font-bold font-cursive"
+                  className="text-4xl sm:text-5xl font-bold"
                 >
-                  Premium Tour Packages
+                  Discover Premium Tours
                 </h1>
                 <p
                   data-aos="fade-up"
-                  className="text-sm text-gray-500 tracking-wide leading-5"
+                  className="text-lg leading-7 tracking-wide"
                 >
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Eaque reiciendis inventore iste ratione ex alias quis magni at
-                  optio
+                  Explore the world's most stunning destinations with our
+                  exclusive tour packages, crafted to give you unforgettable
+                  experiences.
                 </p>
 
                 <div className="grid grid-cols-2 gap-6">
                   <div className="space-y-5">
                     <div data-aos="fade-up" className="flex items-center gap-3">
-                      <FaClipboard className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-red-100 " />
-                      <span>Premium Packages</span>
+                      <FaClipboard className="text-3xl h-12 w-12 shadow-lg p-3 rounded-full bg-red-500/20" />
+                      <span className="text-xl font-semibold">
+                        Premium Packages
+                      </span>
                     </div>
                     <div
                       data-aos="fade-up"
-                      data-aos-delay="300"
+                      data-aos-delay="200"
                       className="flex items-center gap-3"
                     >
-                      <FaMapLocationDot className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-orange-100 " />
-                      <span>Hot Destinations</span>
+                      <FaMapLocationDot className="text-3xl h-12 w-12 shadow-lg p-3 rounded-full bg-orange-500/20" />
+                      <span className="text-xl font-semibold">
+                        Top Destinations
+                      </span>
                     </div>
                     <div
                       data-aos="fade-up"
-                      data-aos-delay="500"
+                      data-aos-delay="400"
                       className="flex items-center gap-3"
                     >
-                      <BiLogoTailwindCss className="text-4xl h-12 w-12 shadow-sm p-3 rounded-full bg-yellow-100" />
-                      <span>Breezes</span>
+                      <FaMountain className="text-3xl h-12 w-12 shadow-lg p-3 rounded-full bg-yellow-500/20" />
+                      <span className="text-xl font-semibold">
+                        Refreshing Landscapes
+                      </span>
                     </div>
                   </div>
                   <div
                     data-aos="slide-left"
                     className="border-l-4 border-primary/50 pl-6 space-y-2"
                   >
-                    <h1 className="text-2xl font-semibold font-cursive ">
-                      Sky touching mountains.
-                    </h1>
-                    <p className="text-sm text-gray-500">
-                      Much like heaven on earth.
+                    <h2 className="text-3xl font-semibold">Mountain Peaks</h2>
+                    <p className="text-lg">
+                      Experience heights that touch the sky.
                     </p>
                   </div>
                 </div>
