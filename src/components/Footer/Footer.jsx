@@ -98,7 +98,8 @@ const Footer = () => {
               </h1>
               <div>
                 <p className="mb-3">Dehradun , Uttarakhand</p>
-                <p>+91 1234567890</p>
+                <p className="mb-3">Badrinath , Uttarakhand</p>
+                <p>+91 6398482452</p>
 
                 {/* social links */}
                 <div className="flex items-center gap-3 mt-6">
