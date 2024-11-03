@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/website/logo.png";
 import BookingForm from "../Booking/BookingForm";
 
@@ -52,13 +53,13 @@ function Navbar() {
             {/* Logo section */}
 
             <div>
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="font-bold text-2xl sm:text-3xl flex justify-center items-center gap-2 tracking-wider"
               >
                 <img src={Logo} alt="Logo" className="w-16" />
                 {/* <span className="font-cursive">Your Brand</span> */}
-              </a>
+              </Link>
             </div>
 
             {/* Hamburger icon for mobile */}
@@ -100,13 +101,13 @@ function Navbar() {
               <ul className="sm:flex items-center gap-6">
                 {Menu.map((menu) => (
                   <li key={menu.id}>
-                    <a
-                      href={menu.link}
+                    <Link
+                      to={menu.link}
                       // className="inline-block text-lg sm:text-xl py-2 px-3 text-gray-950 hover:text-primary transition-colors duration-200"
                       className="rounded-md px-3 py-2 text-sm sm:text-base font-medium text-gray-950 hover:text-primary transition-colors duration-200"
                     >
                       {menu.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -129,13 +130,13 @@ function Navbar() {
               <ul className="space-y-4">
                 {Menu.map((menu) => (
                   <li key={menu.id}>
-                    <a
-                      href={menu.link}
+                    <Link
+                      to={menu.link}
                       // className="block text-lg py-2 text-center text-black/90 hover:text-white hover:bg-gray-300 px-4 rounded-md transition-colors duration-200"
                       className="block rounded-md px-3 py-2 text-sm text-center font-medium text-gray-950 hover:text-primary transition-colors duration-200"
                     >
                       {menu.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

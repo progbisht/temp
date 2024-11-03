@@ -1,4 +1,3 @@
-
 import AppStoreImg from "../../assets/website/app_store.png";
 import PlayStoreImg from "../../assets/website/play_store.png";
 import BgPng from "../../assets/website/coffee-beans-bg.png";
@@ -28,20 +27,20 @@ const AppStore = () => {
               </h1>
               {/* img section */}
               <div className="flex flex-wrap justify-center sm:justify-start items-center">
-                <a href="#">
+                <Link to="#">
                   <img
                     src={PlayStoreImg}
                     alt="Play store"
                     className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
                   />
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <img
                     src={AppStoreImg}
                     alt="App store"
                     className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             {/* Empty div */}
