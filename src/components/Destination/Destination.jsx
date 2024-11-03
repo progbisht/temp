@@ -27,9 +27,9 @@ const Destination = () => {
             </h1>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-lg">
-            <ul className="flex space-x-12 justify-center text-gray-700">
+            <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-12 justify-center text-gray-700">
               <li
-                className={`flex items-center space-x-3 cursor-pointer transition duration-200 ease-in-out transform hover:text-blue-500 hover:scale-105 ${
+                className={`flex items-center justify-center space-x-3 cursor-pointer transition duration-200 ease-in-out transform hover:text-blue-500 hover:scale-105 ${
                   activeMenu === "Yatra" ? "text-blue-600 font-semibold" : ""
                 }`}
                 onClick={() => setActiveMenu("Yatra")}
@@ -40,7 +40,7 @@ const Destination = () => {
               </li>
 
               <li
-                className={`flex items-center space-x-3 cursor-pointer transition duration-200 ease-in-out transform hover:text-blue-500 hover:scale-105 ${
+                className={`flex items-center justify-center space-x-3 cursor-pointer transition duration-200 ease-in-out transform hover:text-blue-500 hover:scale-105 ${
                   activeMenu === "Peace" ? "text-blue-600 font-semibold" : ""
                 }`}
                 onClick={() => setActiveMenu("Peace")}
@@ -51,7 +51,7 @@ const Destination = () => {
               </li>
 
               <li
-                className={`flex items-center space-x-3 cursor-pointer transition duration-200 ease-in-out transform hover:text-blue-500 hover:scale-105 ${
+                className={`flex items-center justify-center space-x-3 cursor-pointer transition duration-200 ease-in-out transform hover:text-blue-500 hover:scale-105 ${
                   activeMenu === "Adventure"
                     ? "text-blue-600 font-semibold"
                     : ""
