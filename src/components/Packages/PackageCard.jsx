@@ -6,6 +6,7 @@ const PackageCard = ({
   id,
   img,
   title,
+  location,
   sightseeing,
   description,
   price,
@@ -35,9 +36,9 @@ const PackageCard = ({
           </h1>
           <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
             <IoLocationSharp className="text-red-500" />
-            <span>{sightseeing}</span>
+            <span>{location}</span>
           </div>
-          <ul className="text-gray-700 dark:text-gray-300 line-clamp-4  list-disc pl-5">
+          <ul className="text-gray-700 dark:text-gray-300 line-clamp-5  list-disc pl-5">
             {description.map((data, index) => (
               <li key={index}>{data}</li>
             ))}

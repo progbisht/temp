@@ -56,6 +56,16 @@ const Packages = ({ handleBookingPopup }) => {
                 {/* <IoFastFood className="icon text-2xl" /> */}
                 <Link className="text-lg">Adventure Special</Link>
               </li>
+              <li
+                className={`flex items-center space-x-3 cursor-pointer transition duration-200 ease-in-out transform hover:text-blue-500 hover:scale-105 ${
+                  activeMenu === "Trekking" ? "text-blue-600 font-semibold" : ""
+                }`}
+                onClick={() => setActiveMenu("Trekking")}
+              >
+                {/* Placeholder for Icon */}
+                {/* <IoFastFood className="icon text-2xl" /> */}
+                <Link className="text-lg">Trekking Special</Link>
+              </li>
             </ul>
           </div>
 
@@ -85,18 +95,16 @@ const Packages = ({ handleBookingPopup }) => {
                     {...item}
                   />
                 ))}
+              {activeMenu === "Trekking" &&
+                packages.map((item) => (
+                  <PlaceCard
+                    handleBookingPopup={handleBookingPopup}
+                    key={item.id}
+                    {...item}
+                  />
+                ))}
             </div>
           </div>
-
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {packagesData.map((item) => (
-              <PlaceCard
-                handleBookingPopup={handleBookingPopup}
-                key={item.id}
-                {...item}
-              />
-            ))}
-          </div> */}
         </section>
       </div>
     </>

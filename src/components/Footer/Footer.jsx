@@ -45,7 +45,7 @@ const Footer = () => {
             </Link>
             <p className="  pt-4">Path to heaven - Devbhoomi Darshan</p>
             <Link
-              to={`tel:+919876543210`}
+              to={`tel:+916398482452`}
               target="_blank"
               className="inline-block bg-primary hover:bg-primary/90 py-2 px-4 mt-5 text-sm rounded-full"
             >

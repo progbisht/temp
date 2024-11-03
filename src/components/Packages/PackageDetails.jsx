@@ -1,8 +1,11 @@
 import { useParams } from "react-router-dom";
 import useData from "../../hooks/useData";
 import { IoLocationSharp } from "react-icons/io5";
+import { FaRupeeSign } from "react-icons/fa";
 
-function PackageDetails() {
+//
+
+const PackageDetails = () => {
   const { id } = useParams(); // Get package ID from route params
 
   const { packagesData } = useData();
@@ -15,8 +18,17 @@ function PackageDetails() {
     return <p>Package not found.</p>;
   }
 
-  const { img, title, sightseeing, description, type, price } = packageDetails;
-  console.log(description);
+  // Destructure additional fields: sightseeing as an array and inclusive/exclusive items
+  const {
+    img,
+    title,
+    sightseeing,
+    description,
+    type,
+    price,
+    inclusives,
+    exclusives,
+  } = packageDetails;
 
   const handleBookNow = () => {
     alert(`Booking for ${packageDetails.title} confirmed!`); // Replace with actual booking logic
@@ -34,38 +46,54 @@ function PackageDetails() {
           className="w-full h-[600px] object-contain rounded-lg overflow-hidden"
         />
         <div className="p-6 space-y-4">
-          <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-            <IoLocationSharp className="text-red-500" />
-            <span>{sightseeing}</span>
+          <div className="text-xl font-semibold text-gray-900 dark:text-white">
+            Sightseeing
           </div>
+          <ul className="space-y-2 list-disc pl-5 text-gray-700 dark:text-gray-300">
+            {sightseeing.map((place, index) => (
+              <li key={index}>{place}</li>
+            ))}
+          </ul>
 
-          <p className="text-2xl font-bold text-gray-900 dark:text-white">
-            INR {price}{" "}
+          <div className="flex items-center gap-2 text-xl font-bold text-gray-900 dark:text-white mt-4">
+            <h2>Price:</h2>
+            <span className="flex items-center">
+              <FaRupeeSign className="text-xl" />
+              {price}{" "}
+            </span>
             <span className="text-sm text-gray-700 dark:text-gray-300">
               {type}
             </span>
-          </p>
-
-          {/* <h2 className="text-2xl font-semibold mt-6">Itinerary</h2>
-          <ul className="space-y-4 list-disc pl-5">
-            {itinerary.map((day, index) => (
-              <li key={index} className="text-gray-700 dark:text-gray-300">
-                <h3 className="font-semibold">Day {index + 1}</h3>
-                <p>{day}</p>
-              </li>
-            ))}
-          </ul> */}
+          </div>
 
           <h2 className="text-2xl font-semibold mt-6">Overview</h2>
-          <ul className="space-y-2 list-disc pl-5">
+          <ul className="space-y-2 list-disc pl-5 text-gray-700 dark:text-gray-300">
             {description.map((data, index) => (
-              <li key={index} className="text-gray-700 dark:text-gray-300">
-                {data}
-              </li>
+              <li key={index}>{data}</li>
             ))}
           </ul>
+
+          {/* <h2 className="text-2xl font-semibold mt-6">Inclusions</h2>
+          <ul className="space-y-2 list-disc pl-5 text-green-600 dark:text-green-400">
+            {inclusives.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+          <h2 className="text-2xl font-semibold mt-6">Exclusions</h2>
+          <ul className="space-y-2 list-disc pl-5 text-red-600 dark:text-red-400">
+            {exclusives.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul> */}
         </div>
-        {/* Book Now Button */}
+
+        <div className="p-6 space-y-4">
+          <p className="text-xl font-bold text-gray-900 dark:text-white">
+            Note: Get detailed itinerary on call.
+          </p>
+        </div>
+
         <button
           onClick={handleBookNow}
           className="mt-6 w-full py-3 text-lg font-semibold bg-primary hover:bg-primary/90 transition-transform duration-200 transform hover:scale-105 text-white "
@@ -75,6 +103,6 @@ function PackageDetails() {
       </div>
     </div>
   );
-}
+};
 
 export default PackageDetails;

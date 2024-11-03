@@ -30,9 +30,12 @@ const Contact = () => {
         </h1>
         <div className="mb-8 text-center">
           <p className="text-lg text-gray-700">Email: contact@example.com</p>
-          <p className="text-lg text-gray-700">Phone: +1 (123) 456-7890</p>
+          <p className="text-lg text-gray-700">Phone: +91 6398482452</p>
           <p className="text-lg text-gray-700">
-            Address: 123 Main St, City, Country
+            Address I: Dehradun, Uttarakhand, India
+          </p>
+          <p className="text-lg text-gray-700">
+            Address II: Badrinath, Uttarakhand, India
           </p>
         </div>
 
