@@ -47,7 +47,7 @@ const PackageDetails = () => {
         />
         <div className="p-6 space-y-4">
           <div className="text-xl font-semibold text-gray-900 dark:text-white">
-            Sightseeing
+            Sightseeing<span className="text-red-600">*</span>
           </div>
           <ul className="space-y-2 list-disc pl-5 text-gray-700 dark:text-gray-300">
             {sightseeing.map((place, index) => (
@@ -59,7 +59,8 @@ const PackageDetails = () => {
             <h2>Price:</h2>
             <span className="flex items-center">
               <FaRupeeSign className="text-xl" />
-              {price}{" "}
+              {price}
+              <span className="text-red-600">*</span>{" "}
             </span>
             <span className="text-sm text-gray-700 dark:text-gray-300">
               {type}
@@ -91,6 +92,10 @@ const PackageDetails = () => {
         <div className="p-6 space-y-4">
           <p className="text-xl font-bold text-gray-900 dark:text-white">
             Note: Get detailed itinerary on call.
+          </p>
+          <p className="text-sm text-gray-900 dark:text-white">
+            <span className="text-red-600">*</span> Price and sightseeing may
+            vary depending on the selected tour package and duration.
           </p>
         </div>
 

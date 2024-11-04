@@ -299,7 +299,7 @@ export const DataProvider = ({ children }) => {
     },
     {
       id: 12,
-      img: Img12, // Add appropriate image for Harshil Valley
+      img: Img12,
       title: "HARSHIL VALLEY EXPLORATION PACKAGE",
       location: "Uttarkashi",
       sightseeing: [
@@ -315,7 +315,7 @@ export const DataProvider = ({ children }) => {
         "Guided treks to scenic spots and local attractions",
         "Explore the pristine nature and culture of Harshil Valley",
       ],
-      price: 15900, // Adjusted price for Harshil Valley exploration
+      price: 15900,
       type: "Per Person",
       category: "Adventure",
     },
@@ -323,7 +323,7 @@ export const DataProvider = ({ children }) => {
     {
       id: 13,
       img: Img13,
-      title: "Nainital Tour Package",
+      title: "NANITAL ADVENTURE TOUR PACKAGE",
       location: "Nainital",
       sightseeing: [
         "Naini Lake, Naina Devi Temple, Snow View Point, Tiffin Top, Land's End, Bhimtal Lake, Sattal Lakes, Mukteshwar Temple, Governor's House, Mall Road, Eco Cave Gardens, Pangot, Kilbury Bird Sanctuary, Nainital Zoo",
@@ -345,7 +345,7 @@ export const DataProvider = ({ children }) => {
     },
     {
       id: 14,
-      img: Img14, // Replace with the actual image for Kausani
+      img: Img14,
       title: "KAUSANI ADVENTURE TOUR PACKAGE",
       location: "Bageshwar",
       sightseeing: [
@@ -367,7 +367,7 @@ export const DataProvider = ({ children }) => {
     },
     {
       id: 15,
-      img: Img15, // Replace with the relevant image for Munsyari
+      img: Img15,
       title: "MUNSYARI ADVENTURE TOUR PACKAGE",
       location: "Pithoragarh",
       sightseeing: [
@@ -389,7 +389,7 @@ export const DataProvider = ({ children }) => {
     },
     {
       id: 16,
-      img: Img16, // Image for the Dhanaulti Adventure Tour
+      img: Img16,
       title: "DHANAULTI ADVENTURE TOUR PACKAGE",
       location: "Tehri",
       sightseeing: [
@@ -404,86 +404,82 @@ export const DataProvider = ({ children }) => {
         "Pickup and drop from Dehradun",
         "All transfers by comfortable cab",
       ],
-      price: 12999, // Adjusted price for the adventure package
+      price: 13000,
       type: "Per Person",
       category: "Adventure",
     },
     {
       id: 17,
       img: Img17,
-      title: "JIM CORBETT TOUR PACKAGE",
-      location: "Jim Corbett National Park, Uttarakhand",
+      title: "KUMAON BLISS TOUR PACKAGE",
+      location: "Nainital, Almora, Bageshwar",
       sightseeing: [
-        "Jim Corbett National Park, Dhikala Zone, Bijrani Zone, Jhirna Zone, Kosi River, Corbett Waterfall, Garjiya Devi Temple, Dhangari Gate, Wildlife Jeep Safari, Bird Watching, Nature Walks, River Rafting in Kosi River, Elephant Ride",
+        "Nainital, Bhimtal, Sattal, Naukuchiatal, Kainchi Dham, Mukteshwar, Almora, Kasar Devi Temple, Kausani Tea Gardens, Baijnath Temple, Ranikhet, Corbett National Park, and scenic viewpoints",
       ],
       description: [
-        "02 Nights Hotel Accommodation in Jim Corbett",
-        "All meals included (Breakfast, Lunch, Dinner)",
-        "Wildlife Jeep Safari in Jim Corbett National Park",
-        "Guided nature walks and bird watching tours",
-        "Visit to Corbett Waterfall and Garjiya Devi Temple",
-        "Pickup and drop from Ramnagar Railway Station",
-        "All sightseeing and transfers by private vehicle",
+        "02 Nights Hotel Accommodation in NAINITAL",
+        "01 Night Hotel Accommodation in MUKTESHWAR",
+        "01 Night Hotel Accommodation in ALMORA",
+        "01 Night Hotel Accommodation in KAUSANI",
+        "01 Night Hotel Accommodation in RANIKHET",
+        "02 Nights Stay at CORBETT National Park",
+        "07 Breakfasts and 07 Dinners included",
+        "Pickup and drop from Kathgodam railway station",
+        "All sightseeing and transfers by private cab",
+        "Guided tours of major temples and viewpoints",
+        "Nature walks, wildlife safari, and local sightseeing",
+        "Visit to Corbett National Park with an included Jeep Safari",
       ],
-      price: 12000,
+      price: 18500,
       type: "Per Person",
       category: "Adventure",
     },
 
     {
       id: 18,
-      img: Img18, // Replace with your image source
-      title: "KAINCHI DHAAM AND JAGESHWAR DHAAM TOUR PACKAGE",
-      location: "Nainital, Almora",
+      img: Img18,
+      title: "KAINCHI DHAAM SPIRITUAL TOUR",
+      location: "Kainchi Dhaam, Nainital",
       sightseeing: [
-        "Nainital, Bhimtal, Sattal, Naukuchiatal, Kainchi Dham, Jageshwar Dham, Jageshwar Temple Complex, Patal Bhuvaneshwar, Almora, Kasar Devi Temple, Mukteshwar, and scenic viewpoints",
+        "Kainchi Dham Temple, Surrounding Nature Trails, and Scenic Hills",
       ],
       description: [
-        "02 Night Hotel Accommodation in NAINITAL",
-        "02 Night Hotel Accommodation in ALMORA",
-        "01 Night stay in KAINCHI DHAAM",
-        "01 Night Hotel Accommodation in JAGESHWAR",
-        "07 Breakfasts and 07 Dinners included",
+        "02 Night Hotel Accommodation in KAINCHI DHAAM",
+        "02 Breakfasts and 02 Dinners included",
         "Pickup and drop from Kathgodam railway station",
-        "All sightseeing and transfers by private cab",
-        "Guided tours of Kainchi Dham and Jageshwar Temple Complex",
-        "Opportunities for nature walks and local sightseeing",
+        "All transfers by private cab",
+        "Guided tour of Kainchi Dham Temple",
+        "Free time for meditation and self-reflection at the temple",
+        "Optional nature walks and spiritual guidance sessions",
       ],
-      price: 15500, // Example price per person
+      price: 10000,
       type: "Per Person",
       category: "Peace",
     },
     {
       id: 19,
       img: Img19,
-      title: "RISHIKESH ADVENTURE TOUR PACKAGE",
-      location: "Rishikesh, Uttarakhand",
+      title: "HARIDWAR, RISHIKESH & MUSSOORIE TOUR PACKAGE",
+      location: "Haridwar, Dehradun",
       sightseeing: [
-        "Ganga Aarti at Triveni Ghat",
-        "River Rafting on the Ganges",
-        "Bungee Jumping at Mohan Chatti",
-        "Trekking to Neer Garh Waterfall",
-        "Camping near the Ganges",
-        "Yoga and Meditation sessions",
-        "Visit to Beatles Ashram",
-        "Zip-lining over the Ganges",
-        "Kunjapuri Temple Sunrise Trek",
-        "Paragliding in Rishikesh",
-        "Exploration of Laxman Jhula and Ram Jhula",
-        "Visit to the Neelkanth Mahadev Temple",
+        "Har Ki Pauri, Mansa Devi Temple, Chandi Devi Temple in Haridwar",
+        "Lakshman Jhula, Ram Jhula, Triveni Ghat, Beatles Ashram, Neelkanth Mahadev Temple in Rishikesh",
+        "Kempty Falls, Mall Road, Gun Hill Point, Company Garden, George Everest's House in Mussoorie",
       ],
       description: [
-        "02 Nights Hotel Accommodation in Rishikesh",
-        "Adventure activities including river rafting, bungee jumping, and trekking",
-        "Yoga and meditation sessions for relaxation and rejuvenation",
-        "All meals included: 02 Breakfast, 02 Lunch, 02 Dinner",
-        "Pickup and drop from Haridwar",
-        "All sightseeing and activities transferred by cab",
-        "Experienced guides for all adventure activities",
+        "01 Night Hotel Accommodation in HARIDWAR",
+        "01 Night Hotel Accommodation in RISHIKESH",
+        "02 Nights Hotel Accommodation in MUSSOORIE",
+        "04 Breakfasts and 04 Dinners included",
+        "Pickup and drop from Dehradun railway station or Jolly Grant airport",
+        "All sightseeing and transfers by private cab",
+        "Guided Ganga Aarti experience at Har Ki Pauri",
+        "Yoga and meditation session at an ashram in Rishikesh",
+        "Opportunities for shopping and exploring local markets",
       ],
-      price: 13999,
+      price: 16200,
       type: "Per Person",
-      category: "Peace",
+      category: "Adventure",
     },
   ];
 

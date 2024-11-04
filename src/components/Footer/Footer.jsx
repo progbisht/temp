@@ -29,9 +29,10 @@ const bgImage = {
   minHeight: "400px",
   width: "100%",
 };
+
 const Footer = () => {
   return (
-    <div style={bgImage} className=" text-white">
+    <div style={bgImage} className=" text-white ">
       <div className="bg-black/40 min-h-[400px]">
         <div className="container grid md:grid-cols-3 pb-20 pt-5">
           {/* company details */}
@@ -116,6 +117,15 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      {/* Fixed footer */}
+      <div className="bg-gradient-to-r from-primary to-secondary border-2 border-primary text-white ">
+        <div className="container text-center">
+          <p>
+            &copy; {new Date().getFullYear()} Esteem Travels. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </div>
