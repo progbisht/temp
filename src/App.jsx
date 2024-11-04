@@ -4,7 +4,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Destinations from "./pages/Destination";
-import Packages from "./components/Packages/Packages";
+import Package from "./pages/Package";
 import PackageDetails from "./components/Packages/PackageDetails";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
@@ -31,7 +31,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="places" element={<Destinations />} />
-          <Route path="packages" element={<Packages />} />
+          <Route path="packages" element={<Package />} />
           <Route path="packages/:id" element={<PackageDetails />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />

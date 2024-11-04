@@ -4,7 +4,7 @@ import DestinationCard from "../components/Destination/DestinationCard";
 const DestinationCards = () => {
   const { destinationsData } = useData();
   return (
-    <div className="container mx-auto px-4 py-4">
+    <div className="container mx-auto px-4 py-4 min-h-screen">
       <h1 className="my-8 border-l-8 border-primary/50 py-2 pl-4 text-3xl font-bold">
         Top Destinations
       </h1>
