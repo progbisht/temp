@@ -12,6 +12,9 @@ import NoPage from "./pages/NoPage";
 // import BlogsDetails from "./pages/BlogsDetails";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import RefundAndCancellationPolicy from "./pages/RefundAndCancellationPolicy";
 
 const App = () => {
   React.useEffect(() => {
@@ -34,6 +37,12 @@ const App = () => {
           <Route path="packages" element={<Package />} />
           <Route path="packages/:id" element={<PackageDetails />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="terms-of-service" element={<TermsOfService />} />
+          <Route
+            path="refund-and-cancellation-policy"
+            element={<RefundAndCancellationPolicy />}
+          />
           <Route path="*" element={<NoPage />} />
           {/* <Route path="blogs" element={<Blogs />} /> */}
           {/* <Route path="blogs/:id" element={<BlogsDetails />} /> */}

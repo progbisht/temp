@@ -7,7 +7,7 @@ const About = () => {
       <div className="container py-8 min-h-screen">
         <div className="py-4">
           <h1 className="my-8 border-l-8 border-primary/50 py-2 pl-4 text-3xl font-bold">
-            About us
+            ABOUT US
           </h1>
           <p className="text-justify">
             Welcome to Esteem Travels, where every journey is crafted with care,

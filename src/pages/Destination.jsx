@@ -6,7 +6,7 @@ const DestinationCards = () => {
   return (
     <div className="container mx-auto px-4 py-4 min-h-screen">
       <h1 className="my-8 border-l-8 border-primary/50 py-2 pl-4 text-3xl font-bold">
-        Top Destinations
+        DESTINATIONS
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">

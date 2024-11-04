@@ -26,7 +26,7 @@ const Contact = () => {
       {/* Contact Information Section */}
       <div className="py-4">
         <h1 className="my-8 border-l-8 border-primary/50 py-2 pl-4 text-3xl font-bold">
-          Contact Us
+          CONTACT US
         </h1>
         <div className="mb-8 text-center">
           <p className="text-lg text-gray-700">Email: contact@example.com</p>
@@ -56,7 +56,7 @@ const Contact = () => {
       {/* Contact Form Section */}
       <div className="py-10">
         <h1 className="my-8 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-bold">
-          Get In Touch
+          GET IN TOUCH
         </h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
